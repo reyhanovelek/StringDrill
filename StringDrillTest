@@ -1,0 +1,28 @@
+package com.example.exercises;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+public class StringDrillTest {
+
+    @Test
+    void testisPalindrome(){
+        assertTrue(StringDrill.isPalindrome("Kayak"));
+        assertFalse(StringDrill.isPalindrome("Hello"));
+    }
+    @Test
+    void testReplaceVowels(){
+        assertEquals("H*ll*",StringDrill.replaceVowels("Hello"));
+
+    }
+    @Test
+    void testCapitalizeWods(){
+        assertEquals("Java Is Fun", StringDrill.capitalizeWords("java is fun"));
+    }
+    @Test
+    void testCountWordOccurences(){
+        assertEquals(3, StringDrill.countWordOccurrences("Java java java", "java"));
+    }
+
+}
